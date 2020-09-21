@@ -1,0 +1,14 @@
+{
+  "name": "zenn.dev",
+  "repository": "https://github.com/mouse484/zenn.dev.git",
+  "author": "mouse_484 <escmouse484@gmail.com>",
+  "private": "true",
+  "scripts": {
+    "prev": "zenn preview",
+    "new": "zenn new:article",
+    "book": "zenn new:book"
+  },
+  "dependencies": {
+    "zenn-cli": "^0.1.31"
+  }
+}
