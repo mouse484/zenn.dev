@@ -13,7 +13,7 @@ published: true
 ## インラインスタイルの使い方
 
 ```vue
-camelCase
+<div :style="{ color: 'red' }">サンプル</div>
 ```
 
 :::message
