@@ -1,0 +1,11 @@
+{
+  "filters": {},
+  "rules": {
+    "preset-ja-technical-writing": true,
+    "ja-technical-writing/ja-no-mixed-period": {
+      "allowPeriodMarks": [
+        ":::"
+      ]
+    }
+  }
+}

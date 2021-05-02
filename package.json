@@ -6,9 +6,14 @@
   "scripts": {
     "prev": "zenn preview",
     "new": "zenn new:article",
-    "book": "zenn new:book"
+    "book": "zenn new:book",
+    "lint": "textlint articles"
   },
   "dependencies": {
     "zenn-cli": "0.1.79"
+  },
+  "devDependencies": {
+    "textlint": "^11.9.0",
+    "textlint-rule-preset-ja-technical-writing": "^6.0.0"
   }
 }

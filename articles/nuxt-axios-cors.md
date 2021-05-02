@@ -35,7 +35,7 @@ axios: {
 ```
 
 :::message
-[nuxt/axios](https://axios.nuxtjs.org/)には[nuxt/proxy](https://github.com/nuxt-community/proxy-module)が含まれているので追加でインストールや`modules`への指定はいりません
+[nuxt/axios](https://axios.nuxtjs.org/)には[nuxt/proxy](https://github.com/nuxt-community/proxy-module)が含まれているので追加でインストールや`modules`への指定はいりません。
 :::
 
 2. proxy で使うパスを指定する
@@ -68,8 +68,8 @@ this.$axios.get('/api3/test'); // http://example.com/test
 ## まとめ
 [nuxt/axiosのproxy](https://axios.nuxtjs.org/options/#proxy)を設定してCORSエラーを回避してAPIなどを使えるようになりました。
 
-色々なサイトを見ると今回の例の`/api1`や`/api2`をよく見ますが実際問題一番使いやすくて楽なのは例の`/api3`だと個人的には思います。
+色々なサイトを見ると今回の例の`/api1`や`/api2`をよく見ますが実際に使うとき普通なら`/api3`が使いやすいと考えます。
 
-間違いや質問などありましたら気軽にコメントしてください
+間違いや質問などありましたら気軽にコメントしてください。
 
 （[Nuxt.js Axios moduleでCORSエラーの優しい対処法](https://qiita.com/mouse_484/items/71f77aef3dfe5216a71b)の書き直しです。）
