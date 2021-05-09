@@ -6,7 +6,7 @@ topics: ['rollup']
 published: true
 ---
 
-rollup.js はデフォルトで警告(warn)があるとエラーが発生したかのごとくコンソールにログを表示されます。
+rollup.js はデフォルトで警告(warn)があるとエラーが発生したかのごとくコンソールにログを表示します。
 
 ```
 // 例
@@ -17,7 +17,7 @@ rollup.js はデフォルトで警告(warn)があるとエラーが発生した�
 
 # --silent を使用する
 
-[--silent](https://rollupjs.org/guide/en/#--silent)を使ってすべてのエラーを無視します。
+[--silent](https://rollupjs.org/guide/en/#--silent)を使ってすべての警告を無視します。
 しかし、すべての警告を無視してしまうので以下の onwarn を使用する方法をおすすめします。
 
 ```
@@ -31,7 +31,7 @@ config の[onwarn](https://rollupjs.org/guide/en/#onwarn)を用いて警告の�
 #### warining.code
 
 code を使って種類別に警告を無視します。
-この場合最初の this 関連のエラーが無視できます。
+この場合最初の例の this 関連の警告が無視できます。
 ドキュメントを探しても code 一覧などなかったので都度 onwarn 内で console.log などをして code を確認してください。
 
 ```js:rollup.config.js
