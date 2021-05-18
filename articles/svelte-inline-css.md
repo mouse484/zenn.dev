@@ -10,6 +10,9 @@ published: true
 
 https://github.com/mouse484/svelte-inline-css
 
+ここで試せます。
+https://svelte.dev/repl/04705a80122e4e4ba8ffd3db1cc3f49ez
+
 # なんで作ったか
 
 - 標準でいい感じにインライン CSS が書けなかった
