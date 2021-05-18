@@ -31,7 +31,7 @@ yarn add svelte-inline-css
   export let height: `${number}px` = '0px';
 </script>
 
-<div use:style={{ height, backgroundColor: 'pink' } />
+<div use:style={{ height, backgroundColor: 'pink' }} />
 ```
 
 Vue.js とほとんど一緒で CSS プロパティは camelCase を使用します。
