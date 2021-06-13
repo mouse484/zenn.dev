@@ -39,10 +39,13 @@ yarn add svelte-inline-css
 
 Vue.js とほとんど一緒で CSS プロパティは camelCase を使用します。
 
+Vue.js v3 のドキュメントと全く同じ書き方をした[例](https://github.com/mouse484/svelte-inline-css/blob/main/example/src/App.svelte)があります。
+
 # これから
 
 - Vue.js と挙動をほぼ一致させる
-  - Array Syntax
+  - ~~Array Syntax~~
+    - 実装 [v1.2.0](https://github.com/mouse484/svelte-inline-css/releases/tag/v1.2.0)
   - Auto-prefixing
   - Multiple Values
 - インラインに展開するんじゃなくて CSS として出力できるようにしたい
