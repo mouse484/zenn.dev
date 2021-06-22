@@ -29,13 +29,13 @@ npm i -D vite-plugin-windicss windicss
 # 設定
 
 ```js:svelte.config.js
-import WindiCSS from 'vite-plugin-windicss/dist/index.mjs';
+import WindiCSS from 'vite-plugin-windicss';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
     vite: {
-      plugins: [ WindiCSS() ]
+      plugins: [ WindiCSS.default() ]
     }
   }
 };
@@ -45,7 +45,8 @@ export default config;
 
 :::message
 
-`import WindiCSS from 'vite-plugin-windicss';`だとモジュールの解決周りの影響で cjs が読み込まれてしまうので直接 mjs をインポートしています。
+~~`import WindiCSS from 'vite-plugin-windicss';`だとモジュールの解決周りの影響で cjs が読み込まれてしまうので直接 mjs をインポートしています。~~
+v1 から必要なくなりました。しかし.default が必要です。
 :::
 
 # css を読み込む
@@ -61,3 +62,4 @@ export default config;
 https://windicss.org/integrations/vite.html#sveltekit-as-of-1-0-0-next-100
 
 - 一部バージョンの違いで本記事と違いがあります。（記事作成時バージョン @sveltejs/kit@1.0.0-next.107）
+- 2021/06/22 更新 vite-plugin-windicss@1.1.0 @sveltejs/kit@1.0.0-next.115 現在は**ほぼ**公式と同じです
