@@ -10,10 +10,10 @@
     "lint": "textlint articles"
   },
   "dependencies": {
-    "zenn-cli": "0.1.79"
+    "zenn-cli": "0.1.101"
   },
   "devDependencies": {
-    "textlint": "^11.9.0",
-    "textlint-rule-preset-ja-technical-writing": "^6.0.0"
+    "textlint": "^12.1.0",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0"
   }
 }
