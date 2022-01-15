@@ -1,10 +1,10 @@
 ---
-
 title: 'EventEmitter の全てのイベントを取得する方法(Node.js)'
 emoji: '👌'
 type: 'tech' # tech: 技術記事 / idea: アイデア
 topics: ['nodejs', 'eventemitter']
 published: true
+---
 
 ※ [数年前 Qiita に投稿した記事](https://qiita.com/mouse_484/items/a2f0b82a8f02dcf42404)の修正版です
 
