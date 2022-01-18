@@ -62,4 +62,4 @@ v1 から必要なくなりました。しかし.default が必要です。
 https://windicss.org/integrations/vite.html#sveltekit-as-of-1-0-0-next-100
 
 - 一部バージョンの違いで本記事と違いがあります。（記事作成時バージョン @sveltejs/kit@1.0.0-next.107）
-- 2021/06/22 更新 vite-plugin-windicss@1.1.0 @sveltejs/kit@1.0.0-next.115 現在は**ほぼ**公式と同じです
+- 2021/06/22 更新 vite-plugin-windicss@1.1.0 @sveltejs/kit@1.0.0-next.115 現在は**ほぼ**公式ドキュメントと同じ手順で可能です
