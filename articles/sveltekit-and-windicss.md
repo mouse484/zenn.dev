@@ -35,19 +35,13 @@ import WindiCSS from 'vite-plugin-windicss';
 const config = {
   kit: {
     vite: {
-      plugins: [ WindiCSS.default() ]
+      plugins: [ WindiCSS() ]
     }
   }
 };
 
 export default config;
 ```
-
-:::message
-
-~~`import WindiCSS from 'vite-plugin-windicss';`だとモジュールの解決周りの影響で cjs が読み込まれてしまうので直接 mjs をインポートしています。~~
-v1 から必要なくなりました。しかし.default が必要です。
-:::
 
 # css を読み込む
 
