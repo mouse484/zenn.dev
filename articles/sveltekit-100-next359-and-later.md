@@ -45,7 +45,7 @@ const config = {
 export default config;
 ```
 
-### 3. vite.config.js を追加する
+### 3. vite.config.js を追加する (^next359)
 
 ```vite.config.js
   import { defineConfig } from 'vite';
