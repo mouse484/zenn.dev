@@ -29,7 +29,7 @@ https://github.com/sveltejs/kit/blob/master/packages/kit/CHANGELOG.md?#100-next3
 
 以下は自分が使ってたのですが中の`vite`を消します
 
-```svelte.config.js
+```js:svelte.config.js
 import vercel from '@sveltejs/adapter-vercel';
 import preprocess from 'svelte-preprocess';
 
@@ -47,7 +47,7 @@ export default config;
 
 ### 3. vite.config.js を追加する (^next359)
 
-```vite.config.js
+```js:vite.config.js
   import { defineConfig } from 'vite';
   import { sveltekit } from '@sveltejs/kit/vite';
 
