@@ -1,12 +1,13 @@
 ---
-title: 'SvelteKitでWindi CSSを使う'
-emoji: '🌟'
-type: 'tech' # tech: 技術記事 / idea: アイデア
+title: "SvelteKitでWindi CSSを使う"
+emoji: "🌟"
+type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [svelte, sveltekit, windicss]
 published: true
 ---
 
 何かすごいらしい [Windi CSS](https://windicss.org/) を [SvelteKit](https://kit.svelte.dev/) で試してみたら、いくつか注意点があったので共有します。
+（SvelteKit@1.0.0-next.359以降はほとんど癖なく Vite で使う方法をそのまま利用できます）
 
 # インストール
 
@@ -28,6 +29,18 @@ npm i -D vite-plugin-windicss windicss
 
 # 設定
 
+```js:vite.config.js
+import { defineConfig } from 'vite';
+import { sveltekit } from '@sveltejs/kit/vite';
+import WindiCSS from 'vite-plugin-windicss';
+
+export default defineConfig({
+  plugins: [sveltekit(), WindiCSS()],
+});
+```
+
+:::details SvelteKit@1.0.0-next.359以前
+
 ```js:svelte.config.js
 import WindiCSS from 'vite-plugin-windicss';
 
@@ -43,9 +56,12 @@ const config = {
 export default config;
 ```
 
+参考: https://windicss.org/integrations/vite.html#sveltekit-as-of-1-0-0-next-102
+:::
+
 # css を読み込む
 
-```js:src/routes/__layout.svelte
+```js:src/routes/+layout.svelte
 <script>
   import 'virtual:windi.css';
 </script>
@@ -57,3 +73,6 @@ https://windicss.org/integrations/vite.html#sveltekit-as-of-1-0-0-next-100
 
 - 一部バージョンの違いで本記事と違いがあります。（記事作成時バージョン @sveltejs/kit@1.0.0-next.107）
 - 2021/06/22 更新 vite-plugin-windicss@1.1.0 @sveltejs/kit@1.0.0-next.115 現在は**ほぼ**公式ドキュメントと同じ手順で可能です
+- 2022/09/23 更新 SvelteKit@1.0.0-next.359以降 vite.config.js に変わったため Vite で使う例をそのまま利用する(公式の Svelte のサンプルを利用しない)方法でうまくいきます（詳細は以下の別記事）
+
+https://zenn.dev/mouse_484/articles/sveltekit-100-next359-and-later
