@@ -1,7 +1,7 @@
 ---
-title: 'semantic-releaseとGitHub Actionsでnpmへいい感じに自動でリリースする'
-emoji: '🌟'
-type: 'tech' # tech: 技術記事 / idea: アイデア
+title: "semantic-releaseとGitHub Actionsでnpmへいい感じに自動でリリースする"
+emoji: "🌟"
+type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [npm, githubactions]
 published: true
 ---
@@ -32,6 +32,11 @@ yarn add -D semantic-release
   }
 }
 ```
+
+:::message
+`package.json`の"version"はリリースするときに勝手に変わるので
+"version": "0.0.0-dev"などにしておくのがおすすめ！
+:::
 
 ### GitHub Actions の設定をする
 
