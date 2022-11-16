@@ -107,3 +107,10 @@ $ /usr/libexec/nslogin
 https://level69.net/archives/31296
 https://qiita.com/shigeokamoto/items/ca2211567771cf40a90d
 https://zenn.dev/takai404/articles/8088f8688018de#%E5%85%88%E4%BA%BA%E3%81%AE%E7%9F%A5%E6%81%B5
+
+# WSL を別のドライブにする
+
+exportしてから移動したいドライブ側importする。
+もっといい方法ほしい
+
+https://blog.ojisan.io/wsl-reinstall-d
