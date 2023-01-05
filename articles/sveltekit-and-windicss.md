@@ -39,7 +39,7 @@ export default defineConfig({
 });
 ```
 
-:::details SvelteKit@1.0.0-next.359以前
+:::details >=SvelteKit@1.0.0-next.359
 
 ```js:svelte.config.js
 import WindiCSS from 'vite-plugin-windicss';
@@ -73,6 +73,7 @@ https://windicss.org/integrations/vite.html#sveltekit-as-of-1-0-0-next-100
 
 - 一部バージョンの違いで本記事と違いがあります。（記事作成時バージョン @sveltejs/kit@1.0.0-next.107）
 - 2021/06/22 更新 vite-plugin-windicss@1.1.0 @sveltejs/kit@1.0.0-next.115 現在は**ほぼ**公式ドキュメントと同じ手順で可能です
-- 2022/09/23 更新 SvelteKit@1.0.0-next.359以降 vite.config.js に変わったため Vite で使う例をそのまま利用する(公式の Svelte のサンプルを利用しない)方法でうまくいきます（詳細は以下の別記事）
+- 2022/09/23 更新 SvelteKit@1.0.0-next.359以降 vite.config.js に変わったため Vite で使う例をそのまま利用する
+  - (公式の Svelte のサンプルを利用しない)方法でうまくいきます（詳細は以下の別記事）
 
 https://zenn.dev/mouse_484/articles/sveltekit-100-next359-and-later

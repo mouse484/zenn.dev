@@ -1,7 +1,7 @@
 ---
-title: "SvelteKit@1.0.0-next.359,374,405のアップデートメモ"
-emoji: "✨"
-type: "tech" # tech: 技術記事 / idea: アイデア
+title: 'SvelteKit@1.0.0-next.359,374,405のアップデートメモ'
+emoji: '✨'
+type: 'tech' # tech: 技術記事 / idea: アイデア
 topics: [sveltekit, svelte, vite]
 published: true
 ---
@@ -27,7 +27,7 @@ https://github.com/sveltejs/kit/blob/master/packages/kit/CHANGELOG.md?#100-next3
 
 ### 2. svelte.config.js から vite 設定を削除 (^next374)
 
-以下は自分が使ってたのですが中の`vite`を消します
+以下は自分が使ってたのですが中の`vite`を消します。
 
 ```js:svelte.config.js
 import vercel from '@sveltejs/adapter-vercel';
@@ -56,17 +56,19 @@ export default config;
   });
 ```
 
-参考: https://github.com/sveltejs/kit/issues/5184
+参考: >https://github.com/sveltejs/kit/issues/5184
+
 :::message
-正確なバージョンは追えていないですが next.359<499 のどこかのバージョンから`@sveltejs/kit/experimental/vite`ではなく`@sveltejs/kit/vite`から sveltekit を取得します
+正確なバージョンは追えていないですが next.359<499 のどこかのバージョン sveltekit の import 先が変わりました。
+`@sveltejs/kit/experimental/vite`->`@sveltejs/kit/vite`
 :::
 
 ### 4. routes ディレクトリなどを含むマイグレーション (^next.405)
 
-`npx svelte-migrate routes`と打つことで自動でマイグレーションされます。
+`npx svelte-migrate routes`と打つことでマイグレーションが行われます。
+
 あとはコンソールに出るのですが自動修正できない部分については GitHub の情報と照らし合わせて変更します。（自分の場合は少しだけしか出ていないし、急に修正する必要がある部分はありませんでした）
 
 参考: https://github.com/sveltejs/kit/discussions/5774
 
-
-## 色々混ざって大変な目に合う前にこまめに依存関係の更新をしよう！！！
+## 色々混ざって大変な目に合う前にこまめに依存関係の更新をしよう

@@ -21,10 +21,10 @@ https://pnpm.io/ja/using-changesets
 
 各説明に関連のドキュメントを貼っておくので違う場合はドキュメントを見て参考にしてください。
 
-#### 知っておくといいこと
+### 知っておくといいこと
 
 Changesets は変更に対してフラグをつけてそのフラグをまとめてリリースしたり、チェンジログを作ったりします。
-このフラグの概念がちょっと分かりにくいと思うので頭の片隅においておいてください。
+このフラグの概念がちょっと分かりにくいので頭の片隅においておいてください。
 
 ## 1. インストール
 
@@ -61,14 +61,15 @@ GitHub Actions の方で`yarn release`というコマンドを使っているの
 
 ## 3. GitHub に npm の TOKEN を設定
 
-ここで npm の TOKEN を取得
-`https://www.npmjs.com/settings/<name>/tokens`
-GitHub のリポジトリ設定から actions のところに`NPM_TOKEN`という名前で TOKEN を設定します
-`https://github.com/<org>/<repo>/settings/secrets/actions`
+npm の TOKEN を取得 (`https://www.npmjs.com/settings/<name>/tokens`)
+
+GitHub のリポジトリ設定から actions のところに`NPM_TOKEN`という名前で TOKEN を設定します。
+
+(設定: `https://github.com/<org>/<repo>/settings/secrets/actions`)
 
 ## 4. (optional) チェンジログに GitHub の PR リンクやユーザー名を表示
 
-追加でインストールしてから設定の`changelog`を書き換えま
+追加でインストールしてから設定の`changelog`を書き換える。
 
 ```
 yarn add -D @changesets/changelog-github
@@ -99,13 +100,16 @@ https://github.com/changesets/changesets/blob/main/docs/config-file-options.md#c
 
 これでリリースまで完成です、npm と GitHub の release に追加されているはずです。
 :::message
-**7** の PR をマージする前に **6** までを繰り返してから **7** の PR をマージすると一気にリリースすることが可能です。
+**7** の PR をマージする前に **6** までを繰り返してから **7** の PR をマージすると一気にリリースが可能です。
 :::
 
 #### 他人のコードまたは先にコミットしてしまった場合
 
-`.changeset/*`にマークダウンを作成してコミットすればいいです。(自分の環境なら `yarn changeset` でいい)
-PR までできている場合、changeset-bot のメッセージの一番下に`Click here if you're a maintainer who wants to add a changeset to this PR`とここから GitHub 上で作成できるので便利です。
+- まだ PR まではしてない場合
+  - そのまま`.changeset/*`にマークダウンを作成してコミットすればいいです。(自分の環境なら `yarn changeset` でいい)
+- PR までできている場合
+  - changeset-bot のメッセージの一番下にあるリンクから GitHub 上で作成できる。
+  - (`Click here if you're a maintainer who wants to add a changeset to this PR`)
 
 # 最後に
 

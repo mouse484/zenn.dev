@@ -33,9 +33,9 @@ wsl --shutdown
 wsl --terminate <ディストリビューション>
 ```
 
-とりあえずバグったら使えば OK なイメージ
-基本 shutdown でいいと思う
-普段は閉じて時間経過で終了するのであまり使わないかも
+とりあえずバグったら使えば OK なイメージ。
+基本 shutdown で◯。
+普段は閉じて時間経過で終了するのであまり使わない。
 
 ### ディストリビューションを追加
 
@@ -43,7 +43,7 @@ wsl --terminate <ディストリビューション>
 wsl -d <ディストリビューション>
 ```
 
-`wsl --install --distribution`の略、↓ で確認してからするといいかも
+`wsl --install --distribution`の略、↓ で確認してからするといい。
 
 ### インストールできるディストリビューションを確認
 
@@ -63,7 +63,7 @@ Ubuntu-18.04    Ubuntu 18.04 LTS
 Ubuntu-20.04    Ubuntu 20.04 LTS
 ```
 
-`wsl --list --online`の略
+`wsl --list --online`の略。
 
 ### ディストリビューションを削除
 
@@ -93,15 +93,15 @@ https://zenn.dev/taiga533/articles/11f1b21ef4a5ff
 
 ##### Docker daemon の起動
 
-Systemd を PID=1 で使えるようにしないとだめ
-以下を実行すれば OK
+Systemd を PID=1 で使えるようにしないとだめ。
+以下を実行すれば OK。
 
 ```
 $ /usr/libexec/wsl-systemd
 $ /usr/libexec/nslogin
 ```
 
-あとはよしなに
+あとはよしなに。
 
 参考:
 https://level69.net/archives/31296
@@ -111,6 +111,6 @@ https://zenn.dev/takai404/articles/8088f8688018de#%E5%85%88%E4%BA%BA%E3%81%AE%E7
 # WSL を別のドライブにする
 
 exportしてから移動したいドライブ側importする。
-もっといい方法ほしい
+もっといい方法ほしい。
 
 https://blog.ojisan.io/wsl-reinstall-d

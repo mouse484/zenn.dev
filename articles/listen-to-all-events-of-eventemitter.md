@@ -6,7 +6,7 @@ topics: ['nodejs', 'eventemitter']
 published: true
 ---
 
-※ [数年前 Qiita に投稿した記事](https://qiita.com/mouse_484/items/a2f0b82a8f02dcf42404)の修正版です
+※ [数年前 Qiita に投稿した記事](https://qiita.com/mouse_484/items/a2f0b82a8f02dcf42404)の修正版です。
 
 Node.js の [EventEmitter](https://nodejs.org/api/events.html) は便利なんですがたくさんのイベントを用意して使っていると一旦発生したイベントをまとめて見たくなります。
 
@@ -16,7 +16,7 @@ Node.js の [EventEmitter](https://nodejs.org/api/events.html) は便利なん�
 
 [EventEmitter2](https://github.com/EventEmitter2/EventEmitter2)などの対応したライブラリを使う。
 
-例：
+例:
 
 ```js
 const EventEmitter2 = require('eventemitter2');
@@ -58,5 +58,5 @@ emitter.emit('event');
 
 ### まとめ
 
-それなりに全ての Event を取得したい人はいるみたいでライブラリは結構ある。
+それなりに全ての Event を取得したい人がいるみたいでライブラリは結構ある。
 でも class 拡張するだけでもできるからわざわざライブラリ使う必要あるんかなと思ったり思わなかったり。

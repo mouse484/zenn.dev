@@ -34,8 +34,8 @@ yarn add -D semantic-release
 ```
 
 :::message
-`package.json`の"version"はリリースするときに勝手に変わるので
-"version": "0.0.0-dev"などにしておくのがおすすめ！
+`package.json`の"version"はリリースするとき勝手に変わります。
+"version": "0.0.0-dev"のようにしておくのがおすすめ。
 :::
 
 ### GitHub Actions の設定をする
