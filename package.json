@@ -10,7 +10,7 @@
     "lint": "textlint articles"
   },
   "dependencies": {
-    "zenn-cli": "0.1.135"
+    "zenn-cli": "0.1.136"
   },
   "devDependencies": {
     "textlint": "^12.5.1",
